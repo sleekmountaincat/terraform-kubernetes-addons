@@ -1,14 +1,9 @@
-variable "cluster_name" {
-  description = "(Required) The name of the EKS cluster where Karpenter is going to be installed"
-  type        = string
-}
-
-variable "cluster_endpoint" {
+variable "cluster-endpoint" {
   description = "(Required) The endpoint of the EKS cluster where Karpenter is going to be installed"
   type        = string
 }
 
-variable "cluster_certificate_authority_data" {
+variable "cluster-certificate-authority-data" {
   description = "(Required) The CA data for the cluster where Karpenter is going to be installed"
   type        = string
 }
