@@ -1,20 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 4.0"
-    }
-    helm = {
-      source  = "hashicorp/helm"
-      version = "~> 2.5"
-    }
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = "~> 1.14"
-    }
-  }
-}
-
 provider "kubernetes" {
   host                   = var.cluster-endpoint
   cluster_ca_certificate = base64decode(var.cluster-certificate-authority-data)
